@@ -45,23 +45,23 @@
               <a class="nav-link" href="#about">Rólam</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#school">Tanulmányok</a>
+              <a class="nav-link" href="#projects">Projektek</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills">Készségek</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projektek</a>
+              <a class="nav-link" href="#school">Tanulmányok</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
+    <div id="about"></div>
     <!-- PAGE -->
-    <div class="container page-wrapper py-5 px-3 px-md-4 mx-auto">
+    <div class="container page-wrapper px-3 px-md-4 mx-auto mt-5">
       <!-- HERO -->
-      <div class="hero-section d-flex justify-content-center" id="about">
+      <div class="hero-section d-flex justify-content-center pt-5">
         <div class="d-flex flex-column flex-sm-row align-items-start gap-4">
           <a href="assets/IMG_1155.JPG" target="_blank" class="flex-shrink-0">
             <img
@@ -143,89 +143,131 @@
         </div>
       </div>
 
-      <!-- TANULMÁNYOK -->
-      <section id="school">
+      <!-- PROJEKTEK -->
+      <section id="projects">
         <h2 class="section-title">
-          <i class="bi bi-mortarboard me-2"></i>Tanulmányok
+          <i class="bi bi-box-seam me-2"></i>Saját Projektek
         </h2>
-        <div class="timeline-item">
-          <div class="row g-3">
-            <div class="col-md-3">
-              <div class="timeline-date">2025. Május – 2026. Január</div>
-            </div>
-            <div class="col-md-9">
-              <div class="timeline-role">Junior Frontend Fejlesztő</div>
-              <div class="timeline-company">Webler Oktatóstúdió</div>
-              <p class="mb-1 timeline-text">Projektmunka</p>
-              <p class="timeline-text">
-                Versenyszervező webapp ami véletlenszerűen sorsolja ki a
-                csoportokat majd az egész verseny levezethető.
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="project-card">
+              <h3 class="text-white">
+                <i class="bi bi-arrow-up-right-circle me-1"></i>
+                Versenylevezetés
+              </h3>
+              <p>
+                Nevezők véletlenyszerű sorsolása, így kialakítva a csoportokat.
+                A verseny az elejétől a végéig lebonyolítható.
               </p>
-              <div class="d-flex flex-wrap gap-1 mt-2">
+              <div class="d-flex flex-wrap gap-1">
+                <span class="tag">React</span
+                ><span class="tag">JavaScript</span>
+              </div>
+              <div class="d-flex flex-wrap mt-3 gap-2">
+                <a
+                  href="https://versenylevezetes-react.vercel.app/"
+                  class="btn-accent"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://gitlab.com/Pityke/darts-versenylevezetes-react"
+                  class="btn-accent"
+                  target="_blank"
+                  >GitLab</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="project-card">
+              <h3 class="text-white">
+                <i class="bi bi-arrow-up-right-circle me-1"></i>
+                Tippmix app
+              </h3>
+              <p>
+                Egy játék amiben ki kell találnod melyik számra gondolt a gép.
+              </p>
+              <div class="d-flex flex-wrap gap-1">
+                <span class="tag">React</span
+                ><span class="tag">JavaScript</span>
+              </div>
+              <div class="d-flex flex-wrap mt-3 gap-2">
+                <a
+                  href="https://tippmix-react.vercel.app/"
+                  class="btn-accent"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/Pitykee/tippmix-react"
+                  class="btn-accent"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="project-card">
+              <h3 class="text-white">
+                <i class="bi bi-arrow-up-right-circle me-1"></i>
+                To-do app
+              </h3>
+              <p>
+                Felveheted teendőided vagy törölheted is de készre is
+                jelölheted.
+              </p>
+              <div class="d-flex flex-wrap gap-1">
                 <span class="tag">React</span>
                 <span class="tag">JavaScript</span>
-                <span class="tag">Bootstrap</span>
-                <span class="tag">Angular</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">Express</span>
-                <span class="tag">Postman</span>
+              </div>
+              <div class="d-flex flex-wrap mt-3 gap-2">
+                <a
+                  href="https://todo-react-flame-xi.vercel.app/"
+                  class="btn-accent"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/Pitykee/todo-react"
+                  class="btn-accent"
+                  target="_blank"
+                  >GitHub</a
+                >
               </div>
             </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="row g-3">
-            <div class="col-md-3">
-              <div class="timeline-date">2024. November – 2025. Március</div>
-            </div>
-            <div class="col-md-9">
-              <div class="timeline-role">Webdesigner</div>
-              <div class="timeline-company">WPKurzus</div>
-              <p class="timeline-text">
-                WordPress weboldalak tervezése, fejlesztése és karbantartása.
+
+          <div class="col-md-6">
+            <div class="project-card">
+              <h3 class="text-white">
+                <i class="bi bi-arrow-up-right-circle me-1"></i>
+                Statikus weboldal
+              </h3>
+              <p>
+                Weboldal tervezet egy edzőterem számára. Reszponzív landing
+                page.
               </p>
-              <div class="d-flex flex-wrap gap-1 mt-2">
-                <span class="tag">Figma</span>
-                <span class="tag">WordPress</span>
-                <span class="tag">Elementor</span>
-                <span class="tag">WooCommerce</span>
-                <span class="tag">Asana</span>
+              <div class="d-flex flex-wrap gap-1">
+                <span class="tag">React</span
+                ><span class="tag">JavaScript</span>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="row g-3">
-            <div class="col-md-3">
-              <div class="timeline-date">2021. Szeptember – 2023. Június</div>
-            </div>
-            <div class="col-md-9">
-              <div class="timeline-role">Műszaki mérnökasszisztens</div>
-              <div class="timeline-company">Őbudai Egyetem</div>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="row g-3">
-            <div class="col-md-3">
-              <div class="timeline-date">2013. Szeptember – 2015. Június</div>
-            </div>
-            <div class="col-md-9">
-              <div class="timeline-role">CAD/CAM CNC programozó</div>
-              <div class="timeline-company">NCT Akadémia</div>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="row g-3">
-            <div class="col-md-3">
-              <div class="timeline-date">2012. Szeptember – 2013. Június</div>
-            </div>
-            <div class="col-md-9">
-              <div class="timeline-role">Műszaki Informatikus</div>
-              <div class="timeline-company">
-                Eötvös Loránd Szakközép és Szakiskola
+              <div class="d-flex flex-wrap mt-3 gap-2">
+                <a
+                  href="https://static-weboldal-react.vercel.app/"
+                  class="btn-accent"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/Pitykee/static-weboldal-react"
+                  class="btn-accent"
+                  target="_blank"
+                  >GitHub</a
+                >
               </div>
             </div>
           </div>
@@ -352,128 +394,89 @@
         </div>
       </section>
 
-      <!-- PROJEKTEK -->
-      <section id="projects">
+      <!-- TANULMÁNYOK -->
+      <section id="school">
         <h2 class="section-title">
-          <i class="bi bi-box-seam me-2"></i>Saját Projektek
+          <i class="bi bi-mortarboard me-2"></i>Tanulmányok
         </h2>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <div class="project-card">
-              <h3 class="text-white">
-                <i class="bi bi-arrow-up-right-circle me-1"></i>
-                To-do app
-              </h3>
-              <p>
-                Felveheted teendőided vagy törölheted is de készre is
-                jelölheted.
+        <div class="timeline-item">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <div class="timeline-date">2025. Május – 2026. Január</div>
+            </div>
+            <div class="col-md-9">
+              <div class="timeline-role">Junior Frontend Fejlesztő</div>
+              <div class="timeline-company">Webler Oktatóstúdió</div>
+              <p class="mb-1 timeline-text">Projektmunka</p>
+              <p class="timeline-text">
+                Versenyszervező webapp ami véletlenszerűen sorsolja ki a
+                csoportokat majd az egész verseny levezethető.
               </p>
-              <div class="d-flex flex-wrap gap-1">
+              <div class="d-flex flex-wrap gap-1 mt-2">
                 <span class="tag">React</span>
                 <span class="tag">JavaScript</span>
-              </div>
-              <div class="d-flex flex-wrap mt-3 gap-2">
-                <a
-                  href="https://todo-react-flame-xi.vercel.app/"
-                  class="btn-accent"
-                  target="_blank"
-                  >Live</a
-                >
-                <a
-                  href="https://github.com/Pitykee/todo-react"
-                  class="btn-accent"
-                  target="_blank"
-                  >GitHub</a
-                >
+                <span class="tag">Bootstrap</span>
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">Postman</span>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="project-card">
-              <h3 class="text-white">
-                <i class="bi bi-arrow-up-right-circle me-1"></i>
-                Tippmix app
-              </h3>
-              <p>
-                Egy játék amiben ki kell találnod melyik számra gondolt a gép.
+        </div>
+        <div class="timeline-item">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <div class="timeline-date">2024. November – 2025. Március</div>
+            </div>
+            <div class="col-md-9">
+              <div class="timeline-role">Webdesigner</div>
+              <div class="timeline-company">WPKurzus</div>
+              <p class="timeline-text">
+                WordPress weboldalak tervezése, fejlesztése és karbantartása.
               </p>
-              <div class="d-flex flex-wrap gap-1">
-                <span class="tag">React</span
-                ><span class="tag">JavaScript</span>
-              </div>
-              <div class="d-flex flex-wrap mt-3 gap-2">
-                <a
-                  href="https://tippmix-react.vercel.app/"
-                  class="btn-accent"
-                  target="_blank"
-                  >Live</a
-                >
-                <a
-                  href="https://github.com/Pitykee/tippmix-react"
-                  class="btn-accent"
-                  target="_blank"
-                  >GitHub</a
-                >
+              <div class="d-flex flex-wrap gap-1 mt-2">
+                <span class="tag">Figma</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">Elementor</span>
+                <span class="tag">WooCommerce</span>
+                <span class="tag">Asana</span>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="project-card">
-              <h3 class="text-white">
-                <i class="bi bi-arrow-up-right-circle me-1"></i>
-                Statikus weboldal
-              </h3>
-              <p>
-                Weboldal tervezet egy edzőterem számára. Reszponzív landing
-                page.
-              </p>
-              <div class="d-flex flex-wrap gap-1">
-                <span class="tag">React</span
-                ><span class="tag">JavaScript</span>
-              </div>
-              <div class="d-flex flex-wrap mt-3 gap-2">
-                <a
-                  href="https://static-weboldal-react.vercel.app/"
-                  class="btn-accent"
-                  target="_blank"
-                  >Live</a
-                >
-                <a
-                  href="https://github.com/Pitykee/static-weboldal-react"
-                  class="btn-accent"
-                  target="_blank"
-                  >GitHub</a
-                >
-              </div>
+        </div>
+        <div class="timeline-item">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <div class="timeline-date">2021. Szeptember – 2023. Június</div>
+            </div>
+            <div class="col-md-9">
+              <div class="timeline-role">Műszaki mérnökasszisztens</div>
+              <div class="timeline-company">Őbudai Egyetem</div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="project-card">
-              <h3 class="text-white">
-                <i class="bi bi-arrow-up-right-circle me-1"></i>
-                Versenylevezetés
-              </h3>
-              <p>
-                Nevezők véletlenyszerű sorsolása, így kialakítva a csoportokat.
-                A verseny az elejétől a végéig lebonyolítható.
-              </p>
-              <div class="d-flex flex-wrap gap-1">
-                <span class="tag">React</span
-                ><span class="tag">JavaScript</span>
-              </div>
-              <div class="d-flex flex-wrap mt-3 gap-2">
-                <a
-                  href="https://versenylevezetes-react.vercel.app/"
-                  class="btn-accent"
-                  target="_blank"
-                  >Live</a
-                >
-                <a
-                  href="https://gitlab.com/Pityke/darts-versenylevezetes-react"
-                  class="btn-accent"
-                  target="_blank"
-                  >GitLab</a
-                >
+        </div>
+        <div class="timeline-item">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <div class="timeline-date">2013. Szeptember – 2015. Június</div>
+            </div>
+            <div class="col-md-9">
+              <div class="timeline-role">CAD/CAM CNC programozó</div>
+              <div class="timeline-company">NCT Akadémia</div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <div class="timeline-date">2012. Szeptember – 2013. Június</div>
+            </div>
+            <div class="col-md-9">
+              <div class="timeline-role">Műszaki Informatikus</div>
+              <div class="timeline-company">
+                Eötvös Loránd Szakközép és Szakiskola
               </div>
             </div>
           </div>
